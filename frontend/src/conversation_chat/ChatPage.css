@@ -1,0 +1,192 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1); /* Przyciemnione, lekko przezroczyste tło */
+    border-radius: 15px; /* Zaokrąglenie narożników */
+    padding: 20px; /* Dodanie trochę przestrzeni wewnętrznej */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lekki cień, aby nadać głębię */
+}
+
+.message-bubble {
+    max-width: 400px; /* Maksymalna szerokość dymku */
+    padding: 10px 15px;
+    margin: 5px;
+    background: #007bff; /* Kolor tła dymku wiadomości (Messenger Blue) */
+    color: #fff; /* Kolor tekstu */
+    border-radius: 15px; /* Zaokrąglenie rogów */
+    position: relative; /* Aby umożliwić pozycjonowanie "trójkąta" */
+    display: inline-block; /* Umożliwia automatyczne dopasowanie szerokości */
+    word-wrap: break-word; /* Automatyczne łamanie słów */
+}
+
+
+
+.message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px; /* Przesunięcie "trójkąta" od krawędzi dymku */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #007bff; /* Kolor trójkąta taki sam jak tło dymku */
+}
+
+/* Dla wiadomości od innego użytkownika, trójkąt może być po prawej stronie */
+.message-bubble.other {
+    background: #e9ecef; /* Tło dymku innego użytkownika */
+    color: #000; /* Kolor tekstu innego użytkownika */
+}
+
+.message-bubble.other::after {
+    bottom: 0;
+    right: 10px; /* Przesunięcie "trójkąta" od krawędzi dymku */
+    border-top-color: #e9ecef; /* Kolor trójkąta dla innego użytkownika */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e9ecef; /* Kolor trójkąta taki sam jak tło dymku */
+}
+
+.voice-toggle-button {
+    background-color: #19263b;
+    margin-left: 44%;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.voice-toggle-button:hover {
+    background-color: #7a26de;
+}
+
+/* Container styles */
+.voice-input-container, .text-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.voice-textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+
+.text-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+
+.sameas {
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 33%;
+
+
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    cursor: pointer;
+}
+
+.voice-start-button{
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    cursor: pointer;
+}
+
+.ReactModal__Overlay {
+    background: linear-gradient(to right bottom, #d13cff, #34c9eb);
+}
+.ReactModal__Content--after-open{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ReactModal__Content {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    width: 80% !important;
+    max-width: 600px !important;
+    margin: auto !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Common Paragraph Styling */
+.ReactModal__Content p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Error Message (Type 1) */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Success Message (Type 2) */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* User Errors (Type 3) */
+.user-error-message {
+    font-size: 0.9em;
+    background-color: #e2e3e5;
+    color: #6c757d;
+    border: 1px solid #dae0e5;
+}

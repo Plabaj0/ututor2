@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background: linear-gradient(to right bottom, #d13cff, #34c9eb);
+    margin-top: 10vh;
+}
+
+.container1 {
+    float: left;
+    margin-right: 60px;
+}
+
+.container2 {
+    float: left;
+    margin-right: 60px;
+    width: 143px;
+}
+
+.container3 {
+    float: left;
+    margin-right: 60px;
+    width: 143px;
+
+}
+
+.container4 {
+    position: absolute;
+    margin-left: 451px;
+    width: 350px;
+    float: left;
+    margin-top: 120px;
+}
+
+.container5 {
+    position: absolute;
+    margin-left: 451px;
+    width: 400px;
+    float: left;
+    margin-top: 240px;
+}
+
+.specific-div {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.specific-div:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 24px;
+    color: #333;
+}
+.item1{
+    height: 600px;
+}
+
+.scroll-container {
+    max-height: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-item {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+.scroll-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.DailyTips {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.DailyTips a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 5px solid #007BFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+}
+
+.DailyTips a:hover {
+    background-color: #f1f1f1;
+}
