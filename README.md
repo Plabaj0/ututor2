@@ -1,4 +1,2 @@
 uTutor to nowoczesna aplikacja do nauki języka angielskiego, oparta na sztucznej inteligencji. Umożliwia prowadzenie rozmów z wybranym przez użytkownika korepetytorem, dostosowanym do konkretnego tematu, poziomu językowego oraz stylu wypowiedzi. Dodatkowo, nasz Tutor analizuje każdą wypowiedź, dostarczając szczegółowy feedback w formie dodatkowego słownictwa, poprawnej gramatyki oraz konstrukcji zdań. Dzięki temu użytkownik nie tylko praktykuje konwersację, ale również otrzymuje spersonalizowane wskazówki, które pomagają w szybkim doskonaleniu umiejętności językowych.
 ![image](https://github.com/user-attachments/assets/9faf35c4-12ab-47ad-840b-d96d31b8e462)
-![nowe1](https://github.com/user-attachments/assets/a9f3ad61-c87b-44dd-a903-9ea91a89ce2f)
-![image](https://github.com/user-attachments/assets/a3346730-154d-4760-98fd-02d817a4eb5e)
